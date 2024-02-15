@@ -1,0 +1,18 @@
+{
+  "name": "wspcn",
+  "version": "1.0.0",
+  "description": " Create anther repo",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js --watch server/"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.3"
+  }
+}
