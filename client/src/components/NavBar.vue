@@ -10,12 +10,14 @@ function toggleMenu() {
 
 </script>
 
+
 <template>
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://bulma.io">
       <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
     </a>
+
 
     <a role="button" @click="toggleMenu" :class="{ 'is-active': isActive } " class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -24,15 +26,23 @@ function toggleMenu() {
     </a>
   </div>
 
+
   <div :class="{ 'is-active': isActive } " id="navbarBasicExample" class="navbar-menu"  >
     <div class="navbar-start">
       <RouterLink to="/" class="navbar-item">
         Home
       </RouterLink>
 
-      <a class="navbar-item">
+
+      <RouterLink to="/documentation" class="navbar-item">
         Documentation
-      </a>
+      </RouterLink>
+
+
+      <RouterLink to="/products" class="navbar-item">
+        Products
+      </RouterLink>
+
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
@@ -73,11 +83,15 @@ function toggleMenu() {
 </nav>
 </template>
 
+
 <style scoped>
 
     .router-link-active {
         border-bottom: 2px solid #00d1b2;
     }
+
+
+
 
 
 </style>
